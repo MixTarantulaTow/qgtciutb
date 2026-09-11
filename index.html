@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voxel Mountain · 体素山水</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100%;
+        background: #1b1e2a;
+        font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+      #app { position: fixed; inset: 0; }
+      .hud {
+        position: fixed;
+        left: 16px;
+        top: 14px;
+        color: #fff;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+        user-select: none;
+        pointer-events: none;
+      }
+      .hud h1 {
+        font-size: 18px;
+        margin: 0 0 4px;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+      .hud p {
+        margin: 0;
+        font-size: 12px;
+        opacity: 0.85;
+      }
+      #fps {
+        position: fixed;
+        right: 14px;
+        top: 12px;
+        color: #d8f3ff;
+        font: 12px/1.4 Consolas, monospace;
+        background: rgba(10, 20, 35, 0.45);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 6px;
+        padding: 4px 8px;
+        pointer-events: none;
+        user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="hud">
+      <h1>Voxel Mountain</h1>
+      <p>拖拽旋转 · 滚轮缩放 · 自动环绕中</p>
+    </div>
+    <div id="fps">FPS: --</div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
