@@ -48,3 +48,7 @@ src/voxel.js       体素实例合批工具
 src/noise.js       种子化 value-noise / fbm
 src/palette.js     体素配色
 ```
+
+## 其他小玩意
+
+- `pelican.svg` — 纯 SVG 手绘动画：鹈鹕骑自行车（SMIL 无脚本），直接用浏览器打开即可。
