@@ -127,7 +127,7 @@ function tickFps() {
 const clock = new THREE.Clock();
 function animate() {
   requestAnimationFrame(animate);
-  const t = clock.elapsedTime;
+  const t = clock.getElapsedTime();
   // subtle lantern flicker
   const f = 0.9 + 0.1 * Math.sin(t * 5.3) * Math.sin(t * 2.1);
   glowMat.color.setRGB(f, f * 0.92, f * 0.8);
